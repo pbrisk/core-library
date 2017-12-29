@@ -1,0 +1,396 @@
+[{
+	"ObjectName": "CONST_RATE",
+	"ObjectType": "CashRateIndex",
+	"ObjectClass": "Index",
+	"ObjectFolder": "/",
+	"ObjectOrigin": 20160309,
+	"Currency" : "EUR",
+	"Curve": "YC-CONST_DISC-0.01-SIRS"
+},{
+	"ObjectName": "DISC",
+	"ObjectType": "ZeroBondIndex",
+	"ObjectClass": "Index",
+	"ObjectFolder": "/",
+	"ObjectOrigin": 20160309,
+	"Currency" : "EUR",
+	"Curve": "YC-CONST_DISC-0.01-SIRS"
+},{
+	"ObjectName": "PAY-LEG-FIX-SIRS",
+	"ObjectType": "CashFlowLeg",
+	"ObjectClass": "Product",
+	"ObjectFolder": "/",
+	"ObjectOrigin": 20161221,
+	"Notional": 10000,
+	"Currency": "EUR",
+	"Multiplier" : 0.0,
+	"ConstantRate": 0.01,
+	"StartDate": 20160314,
+	"EndDate": 20260314,
+	"DiscountIndex": "DISC"
+},{
+	"ObjectName": "REC-LEG-FLOAT-SIRS",
+	"ObjectType": "CashFlowLeg",
+	"ObjectClass": "Product",
+	"ObjectFolder": "/",
+	"ObjectOrigin": 20160309,
+	"Notional": 10000,
+	"Currency": "EUR",
+	"RateIndex": "EUR-EURIBOR-12M",
+	"StartDate": 20160314,
+	"EndDate": 20260314,
+	"RollingFrequency": "1y",
+	"DiscountIndex": "DISC"
+},{
+	"ObjectName": "IRS-FIX-FLOAT-SIRS",
+	"ObjectType": "LegListIRSwap",
+	"ObjectClass": "Product",
+	"ObjectFolder": "/",
+	"ObjectOrigin": 20160309,
+	"Currency": "EUR",
+	"DiscountIndex": "DISC",
+	"Legs": [
+		[
+			"ObjectName",
+			"ObjectClass",
+			"ObjectType"
+		],
+		[
+			"PAY-LEG-FIX-SIRS",
+			"product",
+			"CashFlowLeg"
+		],
+		[
+			"REC-LEG-FLOAT-SIRS",
+			"product",
+			"CashFlowLeg"
+		]
+	]
+},{
+	"ObjectName": "YC-CONST_DISC-0.01-SIRS",
+	"ObjectType": "YieldCurve",
+	"ObjectClass": "YieldCurve",
+	"ObjectFolder": "/",
+	"ObjectOrigin": 20160309,
+	"Currency": "EUR",
+	"Curve": [
+		[
+			" ",
+			"Rate"
+		],
+		[
+			"6M",
+			0.01
+		]
+	]
+},{
+	"ObjectName": "YC-EURIBOR_SIRS",
+	"ObjectType": "YieldCurve",
+	"ObjectClass": "YieldCurve",
+	"ObjectFolder": "/",
+	"ObjectOrigin": 20160309,
+	"Currency": "EUR",
+	"Curve": [
+		[
+			" ",
+			"Rate"
+		],
+		[
+			"1y",
+			0.015
+		],
+		[
+			"2y",
+			0.015
+		],
+		[
+			"3y",
+			0.015
+		],
+		[
+			"4y",
+			0.015
+		],
+		[
+			"5y",
+			0.015
+		],
+		[
+			"6y",
+			0.015
+		],
+		[
+			"7y",
+			0.015
+		],
+		[
+			"8y",
+			0.015
+		],
+		[
+			"9y",
+			0.015
+		],
+		[
+			"10y",
+			0.015
+		],
+		[
+			"11y",
+			0.015
+		],
+		[
+			"12y",
+			0.015
+		],
+		[
+			"13y",
+			0.015
+		],
+		[
+			"14y",
+			0.015
+		],
+		[
+			"15y",
+			0.015
+		],
+		[
+			"16y",
+			0.015
+		],
+		[
+			"17y",
+			0.015
+		],
+		[
+			"18y",
+			0.015
+		],
+		[
+			"19y",
+			0.015
+		],
+		[
+			"20y",
+			0.015
+		],
+		[
+			"21y",
+			0.015
+		],
+		[
+			"22y",
+			0.015
+		],
+		[
+			"23y",
+			0.015
+		],
+		[
+			"24y",
+			0.015
+		],
+		[
+			"25y",
+			0.015
+		],
+		[
+			"26y",
+			0.015
+		],
+		[
+			"27y",
+			0.015
+		],
+		[
+			"28y",
+			0.015
+		],
+		[
+			"29y",
+			0.015
+		],
+		[
+			"30y",
+			0.015
+		],
+		[
+			"35y",
+			0.015
+		],
+		[
+			"40y",
+			0.015
+		],
+		[
+			"50y",
+			0.015
+		],
+		[
+			"60y",
+			0.015
+		]
+	]
+},{
+	"ObjectName": "EUR-CAPLET-VOL",
+	"ObjectType": "CapletVolN",
+	"ObjectClass": "Vol",
+	"ObjectFolder": "/",
+	"Currency": "EUR",
+	"ObjectOrigin": 20160309,
+	"Calendar": "TAR",
+	"DayCount": "Act365",
+	"Surface": [
+		[
+			" ",
+			-0.02,
+			-0.015,
+			-0.01,
+			-0.0075,
+			-0.005,
+			-0.0025,
+			-0.0013,
+			0.0,
+			0.0025,
+			0.005,
+			0.01,
+			0.015,
+			0.02,
+			0.03,
+			0.05,
+			0.1
+		],
+		[
+			"6m",
+			0.0040,
+			0.0030,
+			0.0027,
+			0.0023,
+			0.0020,
+			0.0017,
+			0.0021,
+			0.0025,
+			0.0035,
+			0.0045,
+			0.0060,
+			0.0075,
+			0.0095,
+			0.0125,
+			0.0185,
+			0.0325
+		],
+		[
+			"1y",
+			0.0040,
+			0.0030,
+			0.0027,
+			0.0023,
+			0.0020,
+			0.0017,
+			0.0021,
+			0.0025,
+			0.0035,
+			0.0045,
+			0.0060,
+			0.0075,
+			0.0095,
+			0.0125,
+			0.0185,
+			0.0325
+		],
+		[
+			"2y",
+			0.0040,
+			0.0030,
+			0.0027,
+			0.0023,
+			0.0020,
+			0.0017,
+			0.0021,
+			0.0025,
+			0.0035,
+			0.0045,
+			0.0060,
+			0.0075,
+			0.0095,
+			0.0125,
+			0.0185,
+			0.0325
+		],
+		[
+			"3y",
+			0.0040,
+			0.0030,
+			0.0027,
+			0.0023,
+			0.0020,
+			0.0017,
+			0.0021,
+			0.0025,
+			0.0035,
+			0.0045,
+			0.0060,
+			0.0075,
+			0.0095,
+			0.0125,
+			0.0185,
+			0.0325
+		],
+		[
+			"4y",
+			0.0040,
+			0.0030,
+			0.0027,
+			0.0023,
+			0.0020,
+			0.0017,
+			0.0021,
+			0.0025,
+			0.0035,
+			0.0045,
+			0.0060,
+			0.0075,
+			0.0095,
+			0.0125,
+			0.0185,
+			0.0325
+		],		[
+			"5y",
+			0.0040,
+			0.0030,
+			0.0027,
+			0.0023,
+			0.0020,
+			0.0017,
+			0.0021,
+			0.0025,
+			0.0035,
+			0.0045,
+			0.0060,
+			0.0075,
+			0.0095,
+			0.0125,
+			0.0185,
+			0.0325
+		],
+		[
+			"10y",
+			0.0040,
+			0.0030,
+			0.0027,
+			0.0023,
+			0.0020,
+			0.0017,
+			0.0021,
+			0.0025,
+			0.0035,
+			0.0045,
+			0.0060,
+			0.0075,
+			0.0095,
+			0.0125,
+			0.0185,
+			0.0325
+		]
+	]
+}]

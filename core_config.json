@@ -1,0 +1,26 @@
+{
+  "NAMED_OBJECTS": [
+    {
+      "class": "Calendar",
+      "keys": ["US", "UK", "DE", "TAR"],
+      "load_function": "from_pkg",
+      "load_args": ["holidays"],
+      "aliases": {
+        "US": ["NYC"],
+        "UK": ["LDN"],
+        "DE": ["GER", "BN", "BER", "FFM"],
+        "TAR": ["ECB", "EU", "EUR"]
+      }
+    },
+    {
+      "class": "Currency",
+      "keys": ["EUR", "USD", "GBP", "CHF", "JPY"],
+      "load_function":"from_string"
+    }
+  ],
+  "GENERIC_OBJECTS":[
+    "test/indices.json"
+  ]
+}
+
+

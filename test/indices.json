@@ -1,0 +1,68 @@
+[
+{
+  "Calendar": "TAR",
+  "Class": "CashRateIndex",
+  "Currency": "EUR",
+  "DayCount": "Act/360",
+  "Module": "index",
+  "Name": "EUR-EURIBOR-12M",
+  "RollingMethod": "ModFollow",
+  "Spot": "2B",
+  "Tenor": "12M"
+},
+{
+  "Calendar": "TAR",
+  "Class": "CashRateIndex",
+  "Currency": "EUR",
+  "DayCount": "Act/360",
+  "Module": "index",
+  "Name": "EUR-EURIBOR-1M",
+  "RollingMethod": "ModFollow",
+  "Spot": "2B",
+  "Tenor": "1M"
+},
+{
+  "Calendar": "TAR",
+  "Class": "CashRateIndex",
+  "Currency": "EUR",
+  "DayCount": "Act/360",
+  "Module": "index",
+  "Name": "EUR-EURIBOR-1W",
+  "RollingMethod": "Follow",
+  "Spot": "2B",
+  "Tenor": "1W"
+},
+{
+  "Calendar": "TAR",
+  "Class": "CashRateIndex",
+  "Currency": "EUR",
+  "DayCount": "Act/360",
+  "Module": "index",
+  "Name": "EUR-EURIBOR-2W",
+  "RollingMethod": "Follow",
+  "Spot": "2B",
+  "Tenor": "2W"
+},
+{
+  "Calendar": "TAR",
+  "Class": "CashRateIndex",
+  "Currency": "EUR",
+  "DayCount": "Act/360",
+  "Module": "index",
+  "Name": "EUR-EURIBOR-3M",
+  "RollingMethod": "ModFollow",
+  "Spot": "2B",
+  "Tenor": "3M"
+},
+{
+  "Calendar": "TAR",
+  "Class": "CashRateIndex",
+  "Currency": "EUR",
+  "DayCount": "Act/360",
+  "Module": "index",
+  "Name": "EUR-EURIBOR-6M",
+  "RollingMethod": "ModFollow",
+  "Spot": "2B",
+  "Tenor": "6M"
+}
+]
