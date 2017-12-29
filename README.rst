@@ -2,8 +2,8 @@
 corelibrary (A core financial risk analytics library.)
 ======================================================
 
-.. image:: https://img.shields.io/codeship/d3bf85c0-4cc1-0134-e025-7e829346aa02/master.svg
-    :target: https://codeship.com//projects/170286
+.. image:: https://img.shields.io/codeship/4067b800-461b-0135-2581-6682ffd1d80e/master.svg
+    :target: https://codeship.com//projects/231335
 
 .. image:: https://readthedocs.org/projects/core/badge
     :target: http://corelibrary.readthedocs.io
