@@ -1,9 +1,9 @@
-git+https://github.com/pbrisk/mitschreiben
-git+https://github.com/pbrisk/unicum
-git+https://github.com/pbrisk/goma
-git+https://github.com/pbrisk/businessdate
-git+https://github.com/pbrisk/dcf
-git+https://github.com/pbrisk/mathtoolspy
-git+https://github.com/pbrisk/putcall
-git+https://github.com/pbrisk/timewave
-git+https://github.com/pbrisk/shortrate
+businessdate == 0.4
+dcf == 0.2
+goma  == 0.1
+mathtoolspy == 0.2
+mitschreiben == 0.2
+putcall == 0.1
+shortrate == 0.2
+timewave == 0.5
+unicum == 0.2
