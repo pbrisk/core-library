@@ -4,7 +4,7 @@ import unittest
 import cProfile
 import gc
 import json
-import matplotlib.pyplot as plt
+import matplotlib
 import os
 import pstats
 import psutil
@@ -12,6 +12,8 @@ import sys
 
 from datetime import datetime
 
+matplotlib.use('agg')
+import matplotlib.pyplot as plt
 
 sys.path.append('.')
 import corelibrary
