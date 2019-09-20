@@ -7,14 +7,15 @@ matplotlib
 pylint
 coverage
 
-unicum
-goma
-businessdate
-dcf
-mathtoolspy
-putcall
-timewave
-shortrate
+businessdate == 0.4
+dcf == 0.2
+goma  == 0.1
+mathtoolspy == 0.2
+mitschreiben == 0.2
+putcall == 0.1
+shortrate == 0.2
+timewave == 0.5
+unicum == 0.2
 
 holidays
 
